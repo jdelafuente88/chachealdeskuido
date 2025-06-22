@@ -415,6 +415,17 @@
             font-size: 1.2rem;
             color: #ddd;
         }
+		
+		.spotify-embed-wrapper {
+                background: linear-gradient(90deg, #ff1ead, #8e7bf1, #00f0ff);
+                padding: 5px;
+                border-radius: 12px;
+                margin: 2rem auto;
+                max-width: 600px;
+                box-shadow: 0 0 20px rgba(255, 30, 173, 0.3);
+            }
+
+
 
         /* Oculta solo el menú de navegación, no los iconos */
         @media (max-width: 768px) {
@@ -579,9 +590,9 @@
             </div>
             <div class="links">
                 <a class="link flow-text" href="#about">Sobre mí</a>
-                <a class="link flow-text" href="#lanzamientos">Música</a>
-                <a class="link flow-text" href="#video">Videoclips</a>
                 <a class="link flow-text" href="#events">Eventos</a>
+				<a class="link flow-text" href="#lanzamientos">Música</a>
+                <a class="link flow-text" href="#video">Videoclips</a>
                 <a class="link flow-text" href="#contacto">Contacto</a>
             </div>
             <button id="sidebar-menu-btn" on="tap:sidebar.toggle">☰</button>
@@ -595,9 +606,9 @@
         </div>
         <ul class="sidebar-menu">
             <li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#about">Sobre mí</a></li>
-            <li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#lanzamientos">Música</a></li>
-            <li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#video">Videoclips</a></li>
             <li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#events">Eventos</a></li>
+			<li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#lanzamientos">Música</a></li>
+            <li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#video">Videoclips</a></li>
             <li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#contacto">contacto</a></li>
         </ul>
     </amp-sidebar>
@@ -616,35 +627,36 @@
 
 
 
-    <section id="about" style="background-color: #111117; color: white; padding: 40px 20px;">
-        <div class="about-container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; max-width: 1200px; margin: 0 auto;">
-            <!-- Imagen de Chache -->
-            <div style="flex: 0 0 350px; max-width: 100%;">
-                <h2 class="titulo-estilo">🎸 Sobre mí</h2>
-                <amp-img src="images/chache-bio.jpg" width="350" height="350" layout="responsive" alt="Chache con guitarra" style="border-radius: 8px;"></amp-img>
-            </div>
+<section id="about" style="background-color: #111117; color: white; padding: 40px 20px;">
+  <div class="about-container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; width: 95%; max-width: 95%; margin: 0 auto;">
+    <!-- Imagen de Chache -->
+    <div style="flex: 0 0 350px; max-width: 100%; text-align: center;">
+      <h2 class="titulo-estilo">🎸 Sobre mí</h2>
+      <amp-img src="images/chache-bio.jpg" width="350" height="350" layout="responsive" alt="Chache con guitarra" style="border-radius: 8px;"></amp-img>
+    </div>
 
-            <!-- Texto biográfico -->
-            <div style="flex: 1; min-width: 300px;">
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    <strong>Alberto Díaz Álvez</strong>, más conocido como <strong>Chache</strong>, es cantante, compositor y voz principal del dúo de rumba flamenca <strong>Aldeskuido</strong>, formado en Zarzaquemada, Leganés (Madrid). Su estilo mezcla flamenco, rumba y sonidos urbanos, con letras cargadas de vida cotidiana y raíces populares.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    A través de Aldeskuido, Chache alcanzó notoriedad en la escena independiente con canciones cargadas de barrio, rebeldía y alegría. El grupo supo conectar con una generación que se reconocía en sus letras y ritmos, compartiendo escenario con artistas de referencia del panorama nacional.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    En su faceta en solitario, Chache ha mantenido la esencia flamenca mientras explora nuevas fusiones con lo urbano, el reggae, la world music y el pop mestizo. Canciones como "Vicioso", "Solo a Veces", "Llévame Contigo" o "Onane" reflejan una evolución artística que conserva el alma flamenca mientras abraza la experimentación.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8;">
-                    Chache ha evolucionado desde los inicios callejeros de Aldeskuido hacia una carrera sólida en solitario, fusionando flamenco, rumba y música del mundo. Sus últimos temas reflejan su madurez artística, mientras continúa colaborando y componiendo para proyectos colectivos.
-                </p>
-            </div>
-        </div>
-    </section>
+    <!-- Texto biográfico -->
+    <div style="flex: 1; min-width: 300px; text-align: justify;">
+      <p class="flow-text">
+        <strong>Alberto Díaz Álvez</strong>, más conocido como <strong>Chache</strong>, es cantante, compositor y voz principal del dúo de rumba flamenca <strong>Aldeskuido</strong>, formado en Zarzaquemada, Leganés (Madrid). Su estilo mezcla flamenco, rumba y sonidos urbanos, con letras cargadas de vida cotidiana y raíces populares.
+      </p>
+      <p class="flow-text">
+        A través de Aldeskuido, Chache alcanzó notoriedad en la escena independiente con canciones cargadas de barrio, rebeldía y alegría. El grupo supo conectar con una generación que se reconocía en sus letras y ritmos, compartiendo escenario con artistas de referencia del panorama nacional.
+      </p>
+      <p class="flow-text">
+        En su faceta en solitario, Chache ha mantenido la esencia flamenca mientras explora nuevas fusiones con lo urbano, el reggae, la world music y el pop mestizo. Canciones como "Vicioso", "Solo a Veces", "Llévame Contigo" o "Onane" reflejan una evolución artística que conserva el alma flamenca mientras abraza la experimentación.
+      </p>
+      <p class="flow-text">
+        Chache ha evolucionado desde los inicios callejeros de Aldeskuido hacia una carrera sólida en solitario, fusionando flamenco, rumba y música del mundo. Sus últimos temas reflejan su madurez artística, mientras continúa colaborando y componiendo para proyectos colectivos.
+      </p>
+    </div>
+  </div>
+</section>
+
 
 
     <section id="events" class="section">
-        <h2 class="titulo-estilo">⭐ Próximos Eventos</h2>
+        <h2 class="titulo-estilo">⭐ Eventos</h2>
         <amp-carousel width="1100" height="120" layout="responsive" type="slides" controls>
             <div class="card-panel hoverable">
                 <h5>Solo a Veces</h5>
@@ -672,7 +684,7 @@
     </section>
 
     <section id="lanzamientos" class="section">
-  <h2 class="titulo-estilo">🎵 Últimos Lanzamientos</h2>
+  <h2 class="titulo-estilo">🎵 Música</h2>
 
   <div class="lanzamientos-wrapper">
     <!-- Columna izquierda: Spotify + plataformas -->
