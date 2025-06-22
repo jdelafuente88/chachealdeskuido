@@ -4,9 +4,44 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <link rel="canonical" href="https://tusitio.com">
+    <link rel="canonical" href="https://chachealdeskuido.com">
     <title>CHACHE - Artista Flamenco Urbano</title>
+	
+	<!-- SEO Básico -->
+	<title>CHACHE - Artista Flamenco Urbano | Música, Eventos y Videoclips</title>
+	<meta name="description" content="Descubre a CHACHE, artista flamenco urbano y ex Aldeskuido. Escucha sus últimos lanzamientos, mira sus videoclips y síguelo en redes.">
+	<meta name="keywords" content="CHACHE, Aldeskuido, flamenco urbano, música flamenca, artista español, rumba, videoclip, conciertos, Spotify, YouTube">
+	<meta name="author" content="CHACHE - FUGA DE FLAMENCOS S.L.">
 
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="CHACHE - Artista Flamenco Urbano">
+	<meta property="og:description" content="Conoce a CHACHE, su carrera, sus últimos temas y próximos eventos.">
+	<meta property="og:image" content="images/chache-bio.jpg">
+	<meta property="og:url" content="https://chachealdeskuido.com">
+	<meta property="og:site_name" content="CHACHE Oficial">
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="CHACHE - Artista Flamenco Urbano">
+	<meta name="twitter:description" content="Música flamenca urbana con esencia callejera y sonido mestizo.">
+	<meta name="twitter:image" content="images/chache-bio.jpg">
+	<meta name="twitter:site" content="@chacheoficial">
+
+	<!-- Preconnect y DNS Prefetch -->
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+	<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="https://cdn.ampproject.org">
+	<link rel="preconnect" href="https://cdn.ampproject.org" crossorigin>
+	<link rel="dns-prefetch" href="https://use.fontawesome.com">
+	<link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+	<link rel="dns-prefetch" href="https://open.spotify.com">
+	<link rel="preconnect" href="https://open.spotify.com" crossorigin>
+	<link rel="dns-prefetch" href="https://i.scdn.co">
+	<link rel="preconnect" href="https://i.scdn.co" crossorigin>
+	
     <!-- Materialize CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -415,15 +450,15 @@
             font-size: 1.2rem;
             color: #ddd;
         }
-		
-		.spotify-embed-wrapper {
-                background: linear-gradient(90deg, #ff1ead, #8e7bf1, #00f0ff);
-                padding: 5px;
-                border-radius: 12px;
-                margin: 2rem auto;
-                max-width: 600px;
-                box-shadow: 0 0 20px rgba(255, 30, 173, 0.3);
-            }
+
+        .spotify-embed-wrapper {
+            background: linear-gradient(90deg, #ff1ead, #8e7bf1, #00f0ff);
+            padding: 5px;
+            border-radius: 12px;
+            margin: 2rem auto;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(255, 30, 173, 0.3);
+        }
 
 
 
@@ -545,10 +580,15 @@
                 flex-direction: column;
             }
 
-            .lanzamientos-media,
-            .lanzamientos-list {
-                max-width: 100%;
-            }
+			.lanzamientos-media,
+			.lanzamientos-list {
+			  max-width: 100% !important;
+			  width: 100% !important;
+			}
+
+			.lanzamientos-list {
+			  padding: 0 1rem;
+			}
 
             .lanzamiento-card {
                 flex-direction: row;
@@ -591,7 +631,7 @@
             <div class="links">
                 <a class="link flow-text" href="#about">Sobre mí</a>
                 <a class="link flow-text" href="#events">Eventos</a>
-				<a class="link flow-text" href="#lanzamientos">Música</a>
+                <a class="link flow-text" href="#lanzamientos">Música</a>
                 <a class="link flow-text" href="#video">Videoclips</a>
                 <a class="link flow-text" href="#contacto">Contacto</a>
             </div>
@@ -607,7 +647,7 @@
         <ul class="sidebar-menu">
             <li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#about">Sobre mí</a></li>
             <li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#events">Eventos</a></li>
-			<li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#lanzamientos">Música</a></li>
+            <li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#lanzamientos">Música</a></li>
             <li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#video">Videoclips</a></li>
             <li class="sidevar-nav-item"><a class="sidebar-nav-link flow-text" href="#contacto">contacto</a></li>
         </ul>
@@ -627,31 +667,31 @@
 
 
 
-<section id="about" style="background-color: #111117; color: white; padding: 40px 20px;">
-  <div class="about-container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; width: 95%; max-width: 95%; margin: 0 auto;">
-    <!-- Imagen de Chache -->
-    <div style="flex: 0 0 350px; max-width: 100%; text-align: center;">
-      <h2 class="titulo-estilo">🎸 Sobre mí</h2>
-      <amp-img src="images/chache-bio.jpg" width="350" height="350" layout="responsive" alt="Chache con guitarra" style="border-radius: 8px;"></amp-img>
-    </div>
+    <section id="about" style="background-color: #111117; color: white; padding: 40px 20px;">
+        <div class="about-container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px; width: 95%; max-width: 95%; margin: 0 auto;">
+            <!-- Imagen de Chache -->
+            <div style="flex: 0 0 400px; max-width: 100%; text-align: center;">
+                <h2 class="titulo-estilo">🎸 Sobre mí</h2>
+                <amp-img src="images/chache-bio.jpg" width="400" height="350" layout="responsive" alt="Chache con guitarra" style="border-radius: 8px;"></amp-img>
+            </div>
 
-    <!-- Texto biográfico -->
-    <div style="flex: 1; min-width: 300px; text-align: justify;">
-      <p class="flow-text">
-        <strong>Alberto Díaz Álvez</strong>, más conocido como <strong>Chache</strong>, es cantante, compositor y voz principal del dúo de rumba flamenca <strong>Aldeskuido</strong>, formado en Zarzaquemada, Leganés (Madrid). Su estilo mezcla flamenco, rumba y sonidos urbanos, con letras cargadas de vida cotidiana y raíces populares.
-      </p>
-      <p class="flow-text">
-        A través de Aldeskuido, Chache alcanzó notoriedad en la escena independiente con canciones cargadas de barrio, rebeldía y alegría. El grupo supo conectar con una generación que se reconocía en sus letras y ritmos, compartiendo escenario con artistas de referencia del panorama nacional.
-      </p>
-      <p class="flow-text">
-        En su faceta en solitario, Chache ha mantenido la esencia flamenca mientras explora nuevas fusiones con lo urbano, el reggae, la world music y el pop mestizo. Canciones como "Vicioso", "Solo a Veces", "Llévame Contigo" o "Onane" reflejan una evolución artística que conserva el alma flamenca mientras abraza la experimentación.
-      </p>
-      <p class="flow-text">
-        Chache ha evolucionado desde los inicios callejeros de Aldeskuido hacia una carrera sólida en solitario, fusionando flamenco, rumba y música del mundo. Sus últimos temas reflejan su madurez artística, mientras continúa colaborando y componiendo para proyectos colectivos.
-      </p>
-    </div>
-  </div>
-</section>
+            <!-- Texto biográfico -->
+            <div style="flex: 1; min-width: 300px; text-align: justify;">
+                <p class="flow-text">
+                    <strong>Alberto Díaz Álvez</strong>, más conocido como <strong>Chache</strong>, es cantante, compositor y voz principal del dúo de rumba flamenca <strong>Aldeskuido</strong>, formado en Zarzaquemada, Leganés (Madrid). Su estilo mezcla flamenco, rumba y sonidos urbanos, con letras cargadas de vida cotidiana y raíces populares.
+                </p>
+                <p class="flow-text">
+                    A través de Aldeskuido, Chache alcanzó notoriedad en la escena independiente con canciones cargadas de barrio, rebeldía y alegría. El grupo supo conectar con una generación que se reconocía en sus letras y ritmos, compartiendo escenario con artistas de referencia del panorama nacional.
+                </p>
+                <p class="flow-text">
+                    En su faceta en solitario, Chache ha mantenido la esencia flamenca mientras explora nuevas fusiones con lo urbano, el reggae, la world music y el pop mestizo. Canciones como "Vicioso", "Solo a Veces", "Llévame Contigo" o "Onane" reflejan una evolución artística que conserva el alma flamenca mientras abraza la experimentación.
+                </p>
+                <p class="flow-text">
+                    Chache ha evolucionado desde los inicios callejeros de Aldeskuido hacia una carrera sólida en solitario, fusionando flamenco, rumba y música del mundo. Sus últimos temas reflejan su madurez artística, mientras continúa colaborando y componiendo para proyectos colectivos.
+                </p>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -684,156 +724,156 @@
     </section>
 
     <section id="lanzamientos" class="section">
-  <h2 class="titulo-estilo">🎵 Música</h2>
+        <h2 class="titulo-estilo">🎵 Música</h2>
 
-  <div class="lanzamientos-wrapper">
-    <!-- Columna izquierda: Spotify + plataformas -->
-    <div class="lanzamientos-media">
-      <p style="color: var(--text-muted); margin-top: 10px;">Reproduce mis canciones. Disponible en todas las plataformas de streaming</p>
-      <p class="streaming-links links valign-wrapper">
-        <a href="https://open.spotify.com/intl-es/artist/6HYsJc0l9lVkRUohYJrxVq" class="link flow-text" title="Escucha a Chache en Spotify" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
-          <i class="fab fa-spotify fa-3x"></i>
-        </a>
-        <a href="https://music.amazon.es/artists/B00FCYKOJQ/chache" class="link flow-text" title="Escucha a Chache en Amazon Music" target="_blank" rel="noopener noreferrer" aria-label="Amazon Music">
-          <i class="fab fa-amazon fa-3x"></i>
-        </a>
-        <a href="https://www.deezer.com/es/artist/5879506" class="link flow-text" title="Escucha a Chache en Deezer" target="_blank" rel="noopener noreferrer" aria-label="Deezer">
-          <i class="fab fa-deezer fa-3x"></i>
-        </a>
-        <a href="https://soundcloud.com/chache-music" class="link flow-text" title="Escucha a Chache en Soundcloud" target="_blank" rel="noopener noreferrer" aria-label="Soundcloud">
-          <i class="fab fa-soundcloud fa-3x"></i>
-        </a>
-        <a href="https://music.apple.com/es/artist/chache/1555150628" class="link flow-text" title="Escucha a Chache en Apple Music" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
-          <i class="fa-brands fa-apple fa-3x"></i>
-        </a>
-      </p>
-      <div class="spotify-embed-wrapper">
-        <iframe src="https://open.spotify.com/embed/artist/6HYsJc0l9lVkRUohYJrxVq" width="100%" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </div>
-    </div>
+        <div class="lanzamientos-wrapper">
+            <!-- Columna izquierda: Spotify + plataformas -->
+            <div class="lanzamientos-media">
+                <p style="color: var(--text-muted); margin-top: 10px;">Reproduce mis canciones. Disponible en todas las plataformas de streaming</p>
+                <p class="streaming-links links valign-wrapper">
+                    <a href="https://open.spotify.com/intl-es/artist/6HYsJc0l9lVkRUohYJrxVq" class="link flow-text" title="Escucha a Chache en Spotify" target="_blank" rel="noopener noreferrer" aria-label="Spotify">
+                        <i class="fab fa-spotify fa-3x"></i>
+                    </a>
+                    <a href="https://music.amazon.es/artists/B00FCYKOJQ/chache" class="link flow-text" title="Escucha a Chache en Amazon Music" target="_blank" rel="noopener noreferrer" aria-label="Amazon Music">
+                        <i class="fab fa-amazon fa-3x"></i>
+                    </a>
+                    <a href="https://www.deezer.com/es/artist/5879506" class="link flow-text" title="Escucha a Chache en Deezer" target="_blank" rel="noopener noreferrer" aria-label="Deezer">
+                        <i class="fab fa-deezer fa-3x"></i>
+                    </a>
+                    <a href="https://soundcloud.com/chache-music" class="link flow-text" title="Escucha a Chache en Soundcloud" target="_blank" rel="noopener noreferrer" aria-label="Soundcloud">
+                        <i class="fab fa-soundcloud fa-3x"></i>
+                    </a>
+                    <a href="https://music.apple.com/es/artist/chache/1555150628" class="link flow-text" title="Escucha a Chache en Apple Music" target="_blank" rel="noopener noreferrer" aria-label="Apple Music">
+                        <i class="fa-brands fa-apple fa-3x"></i>
+                    </a>
+                </p>
+                <div class="spotify-embed-wrapper">
+                    <iframe src="https://open.spotify.com/embed/artist/6HYsJc0l9lVkRUohYJrxVq" width="100%" height="480" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
 
-    <!-- Columna derecha: lanzamientos -->
-    <div class="lanzamientos-list">
+            <!-- Columna derecha: lanzamientos -->
+            <div class="lanzamientos-list">
 
-      <!-- Solo 5 visibles -->
-      <div class="lanzamiento-card visible">
-        <div class="lanzamiento-contenido">
-          <div class="lanzamiento-img">
-            <amp-img src="https://i.scdn.co/image/ab67616d00001e0247cf8bfcefcf5a37c86eb01c" width="100" height="100" layout="fixed" alt="Solo a Veces"></amp-img>
-          </div>
-          <div class="lanzamiento-texto">
-            <h5>Solo a Veces</h5>
-            <p>2025 · Sencillo</p>
-          </div>
+                <!-- Solo 5 visibles -->
+                <div class="lanzamiento-card visible">
+                    <div class="lanzamiento-contenido">
+                        <div class="lanzamiento-img">
+                            <amp-img src="https://i.scdn.co/image/ab67616d00001e0247cf8bfcefcf5a37c86eb01c" width="100" height="100" layout="fixed" alt="Solo a Veces"></amp-img>
+                        </div>
+                        <div class="lanzamiento-texto">
+                            <h5>Solo a Veces</h5>
+                            <p>2025 · Sencillo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lanzamiento-card visible">
+                    <div class="lanzamiento-contenido">
+                        <div class="lanzamiento-img">
+                            <amp-img src="https://i.scdn.co/image/ab67616d00001e020f1e1019e641e6b84d8b0444" width="100" height="100" layout="fixed" alt="Vicioso"></amp-img>
+                        </div>
+                        <div class="lanzamiento-texto">
+                            <h5>Vicioso</h5>
+                            <p>2024 · Sencillo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lanzamiento-card visible">
+                    <div class="lanzamiento-contenido">
+                        <div class="lanzamiento-img">
+                            <amp-img src="https://i.scdn.co/image/ab67616d00001e02f7b6bf297828a6f7586f16a6" width="100" height="100" layout="fixed" alt="La Música De La Calle"></amp-img>
+                        </div>
+                        <div class="lanzamiento-texto">
+                            <h5>La Música De La Calle</h5>
+                            <p>2023 · Sencillo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lanzamiento-card visible">
+                    <div class="lanzamiento-contenido">
+                        <div class="lanzamiento-img">
+                            <amp-img src="https://i.scdn.co/image/ab67616d00001e02103a6fa60d6065c66e27e3be" width="100" height="100" layout="fixed" alt="Onane"></amp-img>
+                        </div>
+                        <div class="lanzamiento-texto">
+                            <h5>Onane</h5>
+                            <p>2021 · Sencillo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lanzamiento-card visible">
+                    <div class="lanzamiento-contenido">
+                        <div class="lanzamiento-img">
+                            <amp-img src="https://i.scdn.co/image/ab67616d00001e02a2abc61c2d1bc821dda52083" width="100" height="100" layout="fixed" alt="Llévame Contigo"></amp-img>
+                        </div>
+                        <div class="lanzamiento-texto">
+                            <h5>Llévame Contigo</h5>
+                            <p>2021 · Sencillo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ocultos -->
+                <div [class]="showMoreLanzamientos ? 'lanzamiento-card visible' : 'lanzamiento-card hidden'" class="lanzamiento-card hidden">
+                    <div class="lanzamiento-contenido">
+                        <div class="lanzamiento-img">
+                            <amp-img src="https://i.scdn.co/image/ab67616d00001e029662084f18d6e3e471affdd2" width="100" height="100" layout="fixed" alt="La Niña"></amp-img>
+                        </div>
+                        <div class="lanzamiento-texto">
+                            <h5>La Niña</h5>
+                            <p>2020 · Sencillo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div [class]="showMoreLanzamientos ? 'lanzamiento-card visible' : 'lanzamiento-card hidden'" class="lanzamiento-card hidden">
+                    <div class="lanzamiento-contenido">
+                        <div class="lanzamiento-img">
+                            <amp-img src="https://i.scdn.co/image/ab67616d00001e02606a2cc8fbfbcacd6a5a6a08" width="100" height="100" layout="fixed" alt="Cositas de Tu Cuerpo"></amp-img>
+                        </div>
+                        <div class="lanzamiento-texto">
+                            <h5>Cositas de Tu Cuerpo</h5>
+                            <p>2020 · Sencillo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div [class]="showMoreLanzamientos ? 'lanzamiento-card visible' : 'lanzamiento-card hidden'" class="lanzamiento-card hidden">
+                    <div class="lanzamiento-contenido">
+                        <div class="lanzamiento-img">
+                            <amp-img src="https://i.scdn.co/image/ab67616d00001e02903f60015484f14c2bc2efa9" width="100" height="100" layout="fixed" alt="Dime Mujer"></amp-img>
+                        </div>
+                        <div class="lanzamiento-texto">
+                            <h5>Dime Mujer</h5>
+                            <p>2020 · Sencillo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div [class]="showMoreLanzamientos ? 'lanzamiento-card visible' : 'lanzamiento-card hidden'" class="lanzamiento-card hidden">
+                    <div class="lanzamiento-contenido">
+                        <div class="lanzamiento-img">
+                            <amp-img src="https://i.scdn.co/image/ab67616d00001e02108457832b4de001897a559e" width="100" height="100" layout="fixed" alt="Regalo"></amp-img>
+                        </div>
+                        <div class="lanzamiento-texto">
+                            <h5>Regalo</h5>
+                            <p>2020 · Sencillo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón ver más / menos -->
+                <div class="center-align" style="margin-top: 2rem;">
+                    <button class="btn btn-custom" on="tap:AMP.setState({ showMoreLanzamientos: !showMoreLanzamientos })">
+                        <span [text]="showMoreLanzamientos ? 'Ver menos' : 'Ver más'">Ver más</span>
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="lanzamiento-card visible">
-        <div class="lanzamiento-contenido">
-          <div class="lanzamiento-img">
-            <amp-img src="https://i.scdn.co/image/ab67616d00001e020f1e1019e641e6b84d8b0444" width="100" height="100" layout="fixed" alt="Vicioso"></amp-img>
-          </div>
-          <div class="lanzamiento-texto">
-            <h5>Vicioso</h5>
-            <p>2024 · Sencillo</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="lanzamiento-card visible">
-        <div class="lanzamiento-contenido">
-          <div class="lanzamiento-img">
-            <amp-img src="https://i.scdn.co/image/ab67616d00001e02f7b6bf297828a6f7586f16a6" width="100" height="100" layout="fixed" alt="La Música De La Calle"></amp-img>
-          </div>
-          <div class="lanzamiento-texto">
-            <h5>La Música De La Calle</h5>
-            <p>2023 · Sencillo</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="lanzamiento-card visible">
-        <div class="lanzamiento-contenido">
-          <div class="lanzamiento-img">
-            <amp-img src="https://i.scdn.co/image/ab67616d00001e02103a6fa60d6065c66e27e3be" width="100" height="100" layout="fixed" alt="Onane"></amp-img>
-          </div>
-          <div class="lanzamiento-texto">
-            <h5>Onane</h5>
-            <p>2021 · Sencillo</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="lanzamiento-card visible">
-        <div class="lanzamiento-contenido">
-          <div class="lanzamiento-img">
-            <amp-img src="https://i.scdn.co/image/ab67616d00001e02a2abc61c2d1bc821dda52083" width="100" height="100" layout="fixed" alt="Llévame Contigo"></amp-img>
-          </div>
-          <div class="lanzamiento-texto">
-            <h5>Llévame Contigo</h5>
-            <p>2021 · Sencillo</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Ocultos -->
-      <div [class]="showMoreLanzamientos ? 'lanzamiento-card visible' : 'lanzamiento-card hidden'" class="lanzamiento-card hidden">
-        <div class="lanzamiento-contenido">
-          <div class="lanzamiento-img">
-            <amp-img src="https://i.scdn.co/image/ab67616d00001e029662084f18d6e3e471affdd2" width="100" height="100" layout="fixed" alt="La Niña"></amp-img>
-          </div>
-          <div class="lanzamiento-texto">
-            <h5>La Niña</h5>
-            <p>2020 · Sencillo</p>
-          </div>
-        </div>
-      </div>
-
-      <div [class]="showMoreLanzamientos ? 'lanzamiento-card visible' : 'lanzamiento-card hidden'" class="lanzamiento-card hidden">
-        <div class="lanzamiento-contenido">
-          <div class="lanzamiento-img">
-            <amp-img src="https://i.scdn.co/image/ab67616d00001e02606a2cc8fbfbcacd6a5a6a08" width="100" height="100" layout="fixed" alt="Cositas de Tu Cuerpo"></amp-img>
-          </div>
-          <div class="lanzamiento-texto">
-            <h5>Cositas de Tu Cuerpo</h5>
-            <p>2020 · Sencillo</p>
-          </div>
-        </div>
-      </div>
-
-      <div [class]="showMoreLanzamientos ? 'lanzamiento-card visible' : 'lanzamiento-card hidden'" class="lanzamiento-card hidden">
-        <div class="lanzamiento-contenido">
-          <div class="lanzamiento-img">
-            <amp-img src="https://i.scdn.co/image/ab67616d00001e02903f60015484f14c2bc2efa9" width="100" height="100" layout="fixed" alt="Dime Mujer"></amp-img>
-          </div>
-          <div class="lanzamiento-texto">
-            <h5>Dime Mujer</h5>
-            <p>2020 · Sencillo</p>
-          </div>
-        </div>
-      </div>
-
-      <div [class]="showMoreLanzamientos ? 'lanzamiento-card visible' : 'lanzamiento-card hidden'" class="lanzamiento-card hidden">
-        <div class="lanzamiento-contenido">
-          <div class="lanzamiento-img">
-            <amp-img src="https://i.scdn.co/image/ab67616d00001e02108457832b4de001897a559e" width="100" height="100" layout="fixed" alt="Regalo"></amp-img>
-          </div>
-          <div class="lanzamiento-texto">
-            <h5>Regalo</h5>
-            <p>2020 · Sencillo</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Botón ver más / menos -->
-      <div class="center-align" style="margin-top: 2rem;">
-        <button class="btn btn-custom" on="tap:AMP.setState({ showMoreLanzamientos: !showMoreLanzamientos })">
-          <span [text]="showMoreLanzamientos ? 'Ver menos' : 'Ver más'">Ver más</span>
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
